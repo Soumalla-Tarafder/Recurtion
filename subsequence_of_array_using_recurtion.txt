@@ -1,0 +1,12 @@
+arr=[3,1,2]
+
+def ssequesnce(ind,arr1,n):
+    if(ind>=n):
+        print(arr1)
+        return
+    arr1.append(arr[ind])
+    ssequesnce(ind+1,arr1,n)
+    arr1.pop()
+    ssequesnce(ind+1,arr1,n)
+    
+ssequesnce(0,[],3)    
